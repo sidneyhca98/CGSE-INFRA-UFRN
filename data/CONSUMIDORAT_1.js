@@ -1,0 +1,1 @@
+var json_CONSUMIDORAT_1 = {"type":"FeatureCollection","name":"CONSUMIDORAT_1","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
