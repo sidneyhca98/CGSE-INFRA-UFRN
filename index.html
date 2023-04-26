@@ -61,7 +61,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[-5.844972387607353,-35.210053296774056],[-5.834527085236449,-35.19106317723101]]);
+        }).fitBounds([[-5.847946391812425,-35.21532028362041],[-5.829184699243769,-35.18121052096732]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -515,7 +515,6 @@
             },
         });
         bounds_group.addLayer(layer_PONTONOTAVEL_8);
-        map.addLayer(layer_PONTONOTAVEL_8);
         function pop_LUMINARIAS_EXTERNAS_9(feature, layer) {
             layer.on({
                 mouseout: function(e) {
