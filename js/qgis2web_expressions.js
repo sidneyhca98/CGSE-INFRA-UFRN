@@ -754,17 +754,3 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
-
-
-
-function exp_label_SEGMENTODEDISTRIBUICAOMT_12_eval_expression(context) {
-    // concat("CIRCUITO_MEDIA_TENSAO", '\n', 'CORRENTE: ', "RESULT_CORRENTE_NOMINAL", '\n', 'TENSAO: ', "RESULT_TENSAO", '\n', '3F: ', "RESULT_TRIFASICO", '\n', '2F: ', "RESULT_BIFASICO", '\n', '2F-T: ', "RESULT_BIFASICO_TERRA", '\n', 'F-T: ', "RESULT_FASE_TERRA", '\n', 'F-T-MIN: ', "RESULT_FASE_TERRA_MINIMO", '\n', 'Zth+: ', "RESULT_ZTH+_REAL", ' + j', "RESULT_ZTH+_IMAG", ' pu', '\n', 'Zth0: ', "RESULT_ZTH0_REAL", ' + j', "RESULT_ZTH0_IMAG", ' pu', '\n', 'X/R: ', "RESULT_X/R", '\n', 'Fator de Assimetria: ', "RESULT_F_assimetria")
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return fnc_concat([feature.properties['CIRCUITO_MEDIA_TENSAO'] ,'\n','CORRENTE: ',feature.properties['RESULT_CORRENTE_NOMINAL'] ,'\n','TENSAO: ',feature.properties['RESULT_TENSAO'] ,'\n','3F: ',feature.properties['RESULT_TRIFASICO'] ,'\n','2F: ',feature.properties['RESULT_BIFASICO'] ,'\n','2F-T: ',feature.properties['RESULT_BIFASICO_TERRA'] ,'\n','F-T: ',feature.properties['RESULT_FASE_TERRA'] ,'\n','F-T-MIN: ',feature.properties['RESULT_FASE_TERRA_MINIMO'] ,'\n','Zth+: ',feature.properties['RESULT_ZTH+_REAL'] ,' + j',feature.properties['RESULT_ZTH+_IMAG'] ,' pu','\n','Zth0: ',feature.properties['RESULT_ZTH0_REAL'] ,' + j',feature.properties['RESULT_ZTH0_IMAG'] ,' pu','\n','X/R: ',feature.properties['RESULT_X/R'] ,'\n','Fator de Assimetria: ',feature.properties['RESULT_F_assimetria'] ], context);
-    } else {
-        return fnc_concat([feature['CIRCUITO_MEDIA_TENSAO'] ,'\n','CORRENTE: ',feature['RESULT_CORRENTE_NOMINAL'] ,'\n','TENSAO: ',feature['RESULT_TENSAO'] ,'\n','3F: ',feature['RESULT_TRIFASICO'] ,'\n','2F: ',feature['RESULT_BIFASICO'] ,'\n','2F-T: ',feature['RESULT_BIFASICO_TERRA'] ,'\n','F-T: ',feature['RESULT_FASE_TERRA'] ,'\n','F-T-MIN: ',feature['RESULT_FASE_TERRA_MINIMO'] ,'\n','Zth+: ',feature['RESULT_ZTH+_REAL'] ,' + j',feature['RESULT_ZTH+_IMAG'] ,' pu','\n','Zth0: ',feature['RESULT_ZTH0_REAL'] ,' + j',feature['RESULT_ZTH0_IMAG'] ,' pu','\n','X/R: ',feature['RESULT_X/R'] ,'\n','Fator de Assimetria: ',feature['RESULT_F_assimetria'] ], context);
-    }
-}
