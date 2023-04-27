@@ -61,7 +61,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[-5.847946391812425,-35.21532028362041],[-5.829184699243769,-35.18121052096732]]);
+        }).fitBounds([[-5.843993676682137,-35.2144875283272],[-5.831517791703317,-35.191805700770516]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -530,12 +530,10 @@
                         <td>' + (feature.properties['POTENCIA'] !== null ? autolinker.link(feature.properties['POTENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">LUMENS</th>\
-                        <td>' + (feature.properties['LUMENS'] !== null ? autolinker.link(feature.properties['LUMENS'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['ILUMINÂNCI'] !== null ? autolinker.link(feature.properties['ILUMINÂNCI'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">TIPO</th>\
-                        <td>' + (feature.properties['TIPO'] !== null ? autolinker.link(feature.properties['TIPO'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['TECNOLIGIA'] !== null ? autolinker.link(feature.properties['TECNOLIGIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">FABRICACAO</th>\
@@ -570,7 +568,7 @@
         }
 
         function style_LUMINARIAS_EXTERNAS_9_0(feature) {
-            switch(String(feature.properties['TIPO'])) {
+            switch(String(feature.properties['TECNOLIGIA'])) {
                 case 'LED':
                     return {
                 pane: 'pane_LUMINARIAS_EXTERNAS_9',
